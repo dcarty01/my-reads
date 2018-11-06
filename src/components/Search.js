@@ -7,7 +7,7 @@ import Book from './Book';
 
 class Search extends Component {
 	state = {
-		  query: "",
+	query: "",
         books: [],
         quickView: {},
         showModal: false
@@ -94,7 +94,7 @@ class Search extends Component {
                                     <Book
                                         book={book}
                                         onChangeShelf={this.props.onChangeShelf}
-                                     />
+                                        onUpdateQuickView={this.updateQuickView}/>
                                 </li>
                             ))}
                     </ol>
